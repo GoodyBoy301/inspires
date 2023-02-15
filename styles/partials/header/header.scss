@@ -1,0 +1,6 @@
+.header {
+  @extend %body;
+  @extend %fixed;
+  top: 0;
+  display: flex;
+}

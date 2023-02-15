@@ -1,0 +1,58 @@
+html {
+  overflow: hidden;
+  font-size: calc(100vw / 1440 * 10);
+
+  @include media("<phone") {
+    font-size: calc(100vw / 360 * 10);
+  }
+}
+
+body {
+  @extend %text-s;
+  @extend %light-theme;
+  min-height: 100vh;
+  user-select: none;
+  -webkit-user-drag: none;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input,
+textarea,
+button,
+select,
+a,
+div,
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+canvas {
+  @extend %full;
+  pointer-events: none;
+  z-index: 4;
+  transition: opacity 1s $ease-out-expo;
+
+  @include media("<phone") {
+    z-index: 3;
+  }
+}
+
+[data-reveal]{
+  opacity: 0;
+}
