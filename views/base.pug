@@ -39,18 +39,12 @@ html(lang="en")
     meta(property="twitter:image" content=image ? image : "")
     meta(property="twitter:site" content=site ? site : "")
 
+    link(href="/type.css" rel="stylesheet")
+
   body
     style
       include ../public/main.css
-
-    include ./partials/preloader
-    include ./partials/header
-
     .content#content(data-template=template)
       block content
 
-      if template === "home"
-        include ./partials/footer
-    script.
-      window.preloadables = !{JSON.stringify(preloadables).replace(/<\//g, "<\\/")}
     script(src="main.js") 

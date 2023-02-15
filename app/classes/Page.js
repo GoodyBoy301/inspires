@@ -26,7 +26,7 @@ export default class Page {
   }
   predestroy() {
     if (!canvas) this.destroy();
-    Canvas?.navigate = () => {
+    Canvas.navigate = () => {
       this.removeEventListeners && this.removeEventListeners();
       gsap.to(this.element, { autoAlpha: 0 });
     };
