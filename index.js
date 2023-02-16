@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const preloadables = require("./preloadables");
 const app = express();
-const port = process.env.port || 3000;
+const port = process.env.port || 22023;
 
 app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "views"));
