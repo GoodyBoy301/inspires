@@ -1,0 +1,29 @@
+.home {
+  background: #212121;
+  color: #FFFFFF;
+}
+
+.home__wrapper {
+  padding-top: 7.4rem;
+}
+
+.home__header {}
+
+.home__header__wrapper {}
+
+.home__header__icon {
+  width: 17.749rem;
+  height: 7.7rem;
+  margin: 0 auto;
+}
+
+.home__hero {}
+
+.home__hero__wrapper {}
+
+.home__hero__title {
+  @extend %h1;
+  margin-left: -3.3rem;
+  margin-top: -1.7rem;
+  margin-bottom: -0.916rem;
+}

@@ -1,0 +1,140 @@
+.home__body__segment {
+  position: relative;
+
+  &:nth-of-type(1) {
+    margin-left: 10.1rem;
+
+    .home__body__title {
+      width: 52.3rem
+    }
+
+    .home__body__media {
+      &:nth-of-type(1) {
+        width: calc(42rem * 1.14);
+        // height: 41.6rem;
+        // height: 47.185rem;
+        left: calc(76.829rem - 10.1rem);
+        top: -23.284rem;
+      }
+
+      &:nth-of-type(2) {
+        width: calc(34.3rem * 1.14);
+        // height: calc(48.6rem * 1.19869751);
+        // width: 44.223rem;
+        // height: 53.01rem;
+        left: calc(116.361rem - 10.1rem);
+        top: 2.119rem;
+      }
+
+      &:nth-of-type(3) {
+        width: calc(42rem * 1.14);
+        // height: 47rem;
+        left: calc(65.2rem - 10.1rem);
+        top: 22.022rem;
+      }
+    }
+
+    .home__body__thread {
+      left: 55.2rem;
+      top: 8.816rem;
+      width: 75.391rem;
+      height: 83.895rem;
+    }
+
+  }
+
+  &:nth-of-type(2) {
+    margin-left: 85.6rem;
+    margin-top: 38.043rem;
+
+    .home__body__title {
+      width: 37.7rem
+    }
+
+    .home__body__text {
+      margin-top: 1.7rem;
+    }
+
+    .home__body__media {
+      &:nth-of-type(1) {
+        width: 51.2rem;
+        height: 52.4rem;
+        left: calc(-18.7rem - 51.2rem);
+        top: 3.814rem;
+      }
+
+      &:nth-of-type(2) {
+        width: 46.2rem;
+        height: 35.3rem;
+        left: -25rem;
+        // top: 37.614rem;
+        bottom: calc(-7.5rem - 35.3rem);
+        top: unset;
+      }
+    }
+
+    .home__body__thread {
+      left: -33.291rem;
+      top: 13.973rem;
+      width: 45.746rem;
+      height: 60.214rem;
+    }
+  }
+
+  &:nth-of-type(3) {
+    margin-left: 10.1rem;
+    margin-top: 35.7rem;
+
+    .home__body__title {
+      width: 42rem;
+      margin-top: -0.414rem;
+    }
+
+    .home__body__text {
+      margin-top: 1.5rem;
+
+      span {
+        &:nth-of-type(2) {
+          color: $color-yellow;
+        }
+      }
+    }
+
+    .home__body__media {
+      width: 40.1rem;
+      height: 48.9rem;
+      left: 83.5rem;
+      top: -3.4rem;
+    }
+  }
+}
+
+p.home__body__pre {
+  @extend %pre;
+  margin-bottom: 0.914rem
+}
+
+.home__body__title {
+  @extend %h3;
+}
+
+.home__body__text {
+  @extend %text;
+  margin-top: 1.433rem;
+  width: 53.7rem;
+}
+
+.home__body__media {
+  position: absolute;
+}
+
+.home__body__thread {
+  position: absolute;
+}
+
+.home__body__directive {
+  width: 9.061rem;
+  height: 9.061rem;
+  margin-left: calc(8.812rem - 10.1rem);
+  margin-top: 3.512rem;
+}
