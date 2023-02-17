@@ -4,26 +4,38 @@
   &:nth-of-type(1) {
     margin-left: 10.1rem;
 
+    @include media("<phone") {
+      margin-left: 2.7rem;
+    }
+
     .home__body__title {
-      width: 52.3rem
+      width: 52.3rem;
+
+      @include media("<phone") {
+        width: 31.408rem;
+      }
     }
 
     .home__body__media {
       &:nth-of-type(1) {
         width: calc(42rem * 1.14);
-        // height: 41.6rem;
-        // height: 47.185rem;
         left: calc(76.829rem - 10.1rem);
         top: -23.284rem;
+
+        @include media("<phone") {
+          display: none;
+        }
       }
 
       &:nth-of-type(2) {
         width: calc(34.3rem * 1.14);
-        // height: calc(48.6rem * 1.19869751);
-        // width: 44.223rem;
-        // height: 53.01rem;
         left: calc(116.361rem - 10.1rem);
         top: 2.119rem;
+
+        @include media("<phone") {
+          display: none;
+        }
+
       }
 
       &:nth-of-type(3) {
@@ -31,6 +43,43 @@
         // height: 47rem;
         left: calc(65.2rem - 10.1rem);
         top: 22.022rem;
+
+        @include media("<phone") {
+          display: none;
+        }
+      }
+
+      &:nth-of-type(4) {
+        display: none;
+
+        @include media("<phone") {
+          display: block;
+          width: 20.611rem;
+          left: calc(9.752rem - 2.7rem);
+          top: 23.6rem;
+        }
+      }
+
+      &:nth-of-type(5) {
+        display: none;
+
+        @include media("<phone") {
+          display: block;
+          width: 12.5806rem;
+          left: calc(26.891rem - 2.7rem);
+          top: 39.492rem;
+        }
+      }
+
+      &:nth-of-type(6) {
+        display: none;
+
+        @include media("<phone") {
+          display: block;
+          width: 24.5rem;
+          left: calc(2.5rem - 2.7rem);
+          top: 44.998rem;
+        }
       }
     }
 
@@ -47,20 +96,45 @@
     margin-left: 85.6rem;
     margin-top: 38.043rem;
 
+    @include media("<phone") {
+      margin-left: 2.7rem;
+      margin-top: calc(45.542rem + 2.581rem);
+    }
+
     .home__body__title {
-      width: 37.7rem
+      width: 37.7rem;
+
+      @include media("<phone") {
+        width: 21.834rem
+      }
     }
 
     .home__body__text {
       margin-top: 1.7rem;
+
+      @include media("<phone") {
+        margin-top: 1.2rem;
+      }
     }
 
     .home__body__media {
+      @include media("<phone") {
+        box-sizing: border-box;
+        border: 0.2rem solid #212121;
+      }
+
       &:nth-of-type(1) {
         width: 51.2rem;
         height: 52.4rem;
         left: calc(-18.7rem - 51.2rem);
         top: 3.814rem;
+
+        @include media("<phone") {
+          width: 20.538rem;
+          height: 21.02rem;
+          left: calc(3.8rem - 2.7rem);
+          top: calc(49.358rem + 5.9rem)
+        }
       }
 
       &:nth-of-type(2) {
@@ -70,6 +144,13 @@
         // top: 37.614rem;
         bottom: calc(-7.5rem - 35.3rem);
         top: unset;
+
+        @include media("<phone") {
+          width: 16.475rem;
+          height: 13.712rem;
+          left: calc(19.4rem - 2.7rem);
+          top: calc(49.358rem + 1.7rem)
+        }
       }
     }
 
@@ -85,13 +166,27 @@
     margin-left: 10.1rem;
     margin-top: 35.7rem;
 
+    @include media("<phone") {
+      margin-top: 5.742rem;
+      margin-left: 2.7rem;
+    }
+
     .home__body__title {
       width: 42rem;
       margin-top: -0.414rem;
+
+      @include media("<phone") {
+        width: 24.324rem;
+        margin-top: 0.813rem;
+      }
     }
 
     .home__body__text {
       margin-top: 1.5rem;
+
+      @include media("<phone") {
+        margin-top: 0.645rem;
+      }
 
       span {
         &:nth-of-type(2) {
@@ -105,13 +200,29 @@
       height: 48.9rem;
       left: 83.5rem;
       top: -3.4rem;
+
+      @include media("<phone") {
+        box-sizing: border-box;
+        border: 0.2rem solid #212121;
+      }
+
+      @include media("<phone") {
+        width: 18.395rem;
+        height: 16.129rem;
+        left: calc(12.8rem - 2.7rem);
+        top: calc(36.945rem + 7.588rem);
+      }
     }
   }
 }
 
 p.home__body__pre {
   @extend %pre;
-  margin-bottom: 0.914rem
+  margin-bottom: 0.914rem;
+
+  @include media("<phone") {
+    margin-bottom: 0.658rem;
+  }
 }
 
 .home__body__title {
@@ -122,6 +233,12 @@ p.home__body__pre {
   @extend %text;
   margin-top: 1.433rem;
   width: 53.7rem;
+
+  @include media("<phone") {
+    // width: 30.9rem;
+    width: 30.8rem;
+    margin-top: 0.9rem;
+  }
 }
 
 .home__body__media {
@@ -130,6 +247,10 @@ p.home__body__pre {
 
 .home__body__thread {
   position: absolute;
+
+  @include media("<phone") {
+    display: none;
+  }
 }
 
 .home__body__directive {
@@ -137,4 +258,11 @@ p.home__body__pre {
   height: 9.061rem;
   margin-left: calc(8.812rem - 10.1rem);
   margin-top: 3.512rem;
+
+  @include media("<phone") {
+    width: 5.441rem;
+    height: 5.441rem;
+    margin-top: 2.105rem;
+    margin-left: 0;
+  }
 }

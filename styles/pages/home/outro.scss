@@ -1,0 +1,114 @@
+.home__outro {
+  margin-top: 128.6rem;
+  position: relative;
+
+  @include media("<phone") {
+    margin-top: 11.7rem;
+  }
+}
+
+.home__outro__wrapper {}
+
+.home__outro__title {
+  @extend %h2;
+  text-align: center;
+
+  span:nth-of-type(2) {
+    color: $color-yellow;
+
+    @include media("<phone") {
+      color: unset;
+    }
+  }
+}
+
+.home__outro__text {
+  @extend %text;
+  text-align: center;
+  width: 64.1rem;
+  margin: 3.7rem auto 0;
+
+  @include media("<phone") {
+    width: 28.5rem;
+    margin-top: 2.3rem;
+  }
+}
+
+.home__outro__thread {
+  position: absolute;
+
+  &:nth-of-type(1) {
+    top: -17.1rem;
+    width: 38.75rem;
+    height: 38.36rem;
+    left: -10.5rem;
+
+    @include media("<phone") {
+      width: 8.6rem;
+      height: 8.514rem;
+      left: -2.3rem;
+      top: -2.1rem;
+    }
+  }
+
+  &:nth-of-type(2) {
+    top: -33rem;
+    width: 56.038rem;
+    height: 68.4rem;
+    // left: 123.4rem;
+    left: 109rem;
+
+    @include media("<phone") {
+      width: 16.4rem;
+      height: 20.018rem;
+      top: -9.4rem;
+      left: 30.5rem;
+    }
+  }
+}
+
+.home__outro__icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 7rem;
+  width: 52.1rem;
+  margin: 0 auto;
+  margin-top: 11.6rem;
+  margin-bottom: 9.1rem;
+
+  @include media("<phone") {
+    width: 16.3rem;
+    gap: 2.8rem;
+    margin-top: 4.599rem;
+    margin-bottom: 5.727rem;
+  }
+}
+
+.home__outro__icon {}
+
+.home__outro__link {}
+
+.home__outro__media {}
+
+.home__footer {
+  border-top: 0.03rem solid #505050;
+  padding-top: 3.9rem;
+
+  @include media("<phone") {
+    margin: 0 3.2rem 0 3.3rem;
+    padding-top: 2.5rem;
+  }
+}
+
+.home__footer__wrapper {}
+
+.home_footer__text {
+  @extend %text-xs;
+  text-align: center;
+  padding-bottom: 4.7rem;
+
+  @include media("<phone") {
+    font-size: 1.2rem;
+    padding-bottom: 3.2rem;
+  }
+}

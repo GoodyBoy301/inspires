@@ -5,6 +5,10 @@
 
 .home__wrapper {
   padding-top: 7.4rem;
+
+  @include media("<phone") {
+    padding-top: 4.7rem;
+  }
 }
 
 .home__header {}
@@ -15,6 +19,10 @@
   width: 17.749rem;
   height: 7.7rem;
   margin: 0 auto;
+
+  @include media("<phone") {
+    display: none
+  }
 }
 
 .home__hero {}
@@ -26,4 +34,13 @@
   margin-left: -3.3rem;
   margin-top: -1.7rem;
   margin-bottom: -0.916rem;
+
+  @include media("<phone") {
+    margin-left: -1.2rem;
+    margin-bottom: 0.7rem;
+  }
 }
+
+.home__body {}
+
+.home__body__wrapper {}

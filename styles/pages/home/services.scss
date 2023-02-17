@@ -1,0 +1,141 @@
+.home__services {
+  margin-top: 34.9rem;
+  position: relative;
+
+  @include media("<phone") {
+    margin-top: 46.7rem;
+  }
+}
+
+.home__services__wrapper {
+  margin-left: 10.8rem;
+  margin-right: 10.766rem;
+
+  @include media("<phone") {
+    margin-left: 2.7rem;
+    margin-right: 3.1rem
+  }
+}
+
+.home__services__title {
+  @extend %h2;
+  width: 68.7rem;
+
+  @include media("<phone") {
+    margin-left: 1.9rem;
+    width: 29.9rem;
+  }
+}
+
+.home__services__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.826rem 2.5rem;
+  width: 129.434rem;
+  position: absolute;
+  top: 0;
+
+  @include media("<phone") {
+    width: 33.2rem;
+    position: unset;
+    margin-top: 3rem;
+    gap: 0.9rem 0.8rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.home__service {
+  width: 41.478rem;
+  height: 45.674rem;
+  background: #333333;
+  padding: 4.7rem 7.878rem 6.974rem 4.5rem;
+  box-sizing: border-box;
+
+  @include media("<phone") {
+    width: 16.2rem;
+    height: 20.8rem;
+    grid-area: unset !important;
+    padding: 2.1rem 2.70125rem 2.7rem 2rem;
+  }
+
+  &:nth-of-type(1) {
+    grid-area: 1/3;
+
+    .home__service__title {
+      width: 13.3rem;
+
+      @include media("<phone") {
+        width: 5.207rem;
+      }
+    }
+
+  }
+
+  &:nth-of-type(2) {
+    grid-area: 2/1;
+
+    .home__service__title {
+      width: 31.552rem;
+
+      @include media("<phone") {
+        width: 12.352rem;
+      }
+    }
+  }
+
+  &:nth-of-type(3) {
+    grid-area: 2/2;
+
+    @include media("<phone") {
+
+      p {
+        width: 9.5rem;
+      }
+    }
+  }
+
+  &:nth-of-type(4) {
+    grid-area: 2/3;
+
+  }
+
+  &:nth-of-type(5) {
+    grid-area: 3/1;
+
+    @include media("<phone") {
+      grid-area: 2/2 !important;
+
+      p {
+        width: 8rem;
+      }
+    }
+  }
+
+  &:nth-of-type(6) {
+    grid-area: 3/2;
+  }
+
+  &:nth-of-type(7) {
+    grid-area: 3/3;
+  }
+}
+
+.home__service__icon {
+  @extend %icon;
+}
+
+.home__service__title {
+  @extend %h4;
+  width: 20.093rem;
+  margin-top: 11.5rem;
+
+  @include media("<phone") {
+    margin-top: 3.2rem;
+    width: 7.9rem;
+  }
+}
+
+.home__service__text {
+  @extend %text-s;
+  margin-top: 1.6rem;
+}
