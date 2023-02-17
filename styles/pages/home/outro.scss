@@ -84,7 +84,11 @@
   }
 }
 
-.home__outro__icon {}
+.home__outro__icon {
+  &:hover{
+    filter: drop-shadow(0.2rem 0.4rem 0.6rem black);
+  }
+}
 
 .home__outro__link {}
 

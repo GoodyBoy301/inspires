@@ -50,6 +50,11 @@
   background: #333333;
   padding: 4.7rem 7.878rem 6.974rem 4.5rem;
   box-sizing: border-box;
+  transition: 0.2s $ease-out-expo;
+
+  &:hover {
+    background: #393939;
+  }
 
   @include media("<phone") {
     width: 16.2rem;

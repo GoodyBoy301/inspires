@@ -88,6 +88,18 @@
       top: 8.816rem;
       width: 75.391rem;
       height: 83.895rem;
+
+      &:nth-of-type(1) {
+        path {
+          stroke: #333333;
+        }
+      }
+
+      &:nth-of-type(2) {
+        path {
+          opacity: 0;
+        }
+      }
     }
 
   }
@@ -159,6 +171,18 @@
       top: 13.973rem;
       width: 45.746rem;
       height: 60.214rem;
+
+      &:nth-of-type(1) {
+        path {
+          stroke: #333333;
+        }
+      }
+
+      &:nth-of-type(2) {
+        path {
+          opacity: 0;
+        }
+      }
     }
   }
 
@@ -243,10 +267,14 @@ p.home__body__pre {
 
 .home__body__media {
   position: absolute;
+  img{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
 }
 
 .home__body__thread {
   position: absolute;
+  pointer-events: none;
 
   @include media("<phone") {
     display: none;

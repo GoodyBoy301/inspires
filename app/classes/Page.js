@@ -17,7 +17,7 @@ export default class Page {
 
     //add animations
 
-    this.predestroy();
+    // this.predestroy();
   }
   createWebGL() {
     this.createGeometry?.call(this);
