@@ -114,6 +114,9 @@
 
 .home__outro__link {
   --width: 11.14rem;
+  @include media("<phone"){
+    --width: 3.042rem;
+  }
 
 
 }
