@@ -3,7 +3,7 @@
   position: relative;
 
   @include media("<phone") {
-    margin-top: 11.7rem;
+    margin-top: 4.5rem;
   }
 }
 
@@ -25,7 +25,7 @@
 .home__outro__text {
   @extend %text;
   text-align: center;
-  width: 64.1rem;
+  width: 88.3rem;
   margin: 3.7rem auto 0;
 
   @include media("<phone") {
@@ -73,15 +73,15 @@
   gap: 7rem;
   width: 52.1rem;
   margin: 0 auto;
-  margin-top: 11.6rem;
-  margin-bottom: 9.1rem;
+  margin-top: 4.5rem;
+  margin-bottom: 6rem;
   align-items: center;
 
   @include media("<phone") {
     width: 16.3rem;
     gap: 2.8rem;
-    margin-top: 4.599rem;
-    margin-bottom: 5.727rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -114,7 +114,8 @@
 
 .home__outro__link {
   --width: 11.14rem;
-  @include media("<phone"){
+
+  @include media("<phone") {
     --width: 3.042rem;
   }
 
@@ -149,6 +150,64 @@
     }
   }
 
+}
+
+.home__outro__buttons {
+  margin-top: 3.7rem;
+  display: grid;
+  gap: 2.5rem;
+
+  @include media("<phone") {
+    margin-top: 2.35rem;
+    gap: 1rem;
+  }
+
+  button {
+    margin: 0 auto;
+    width: 38.8rem;
+    height: 6.6rem;
+    background: #333333;
+    border-radius: 3rem;
+    color: white;
+    border: 0.2rem solid #333333;
+    cursor: pointer;
+    transition: $ease-out-expo 0.35s;
+
+    @include media("<phone") {
+      width: 35.2rem;
+      height: 5.5rem;
+    }
+  }
+
+  button:hover {
+    background: #212121;
+  }
+}
+
+.home__outro__pricing {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 101.5%;
+  text-transform: uppercase;
+
+  @include media("<phone") {
+    font-size: 3.2rem;
+  }
+}
+
+.home__outro__try {
+  font-family: 'Aeonik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 101.5%;
+  letter-spacing: 0.15rem;
+
+  @include media("<phone") {
+    font-size: 1.4rem;
+  }
 }
 
 .home__footer {

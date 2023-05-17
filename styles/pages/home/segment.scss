@@ -142,10 +142,11 @@
         top: 3.814rem;
 
         @include media("<phone") {
-          width: 20.538rem;
-          height: 21.02rem;
-          left: calc(3.8rem - 2.7rem);
-          top: calc(49.358rem + 5.9rem)
+          width: 16.475rem;
+          height: 13.712rem;
+          left: calc(19.4rem - 2.7rem);
+          top: calc(49.358rem + 12.7rem);
+          z-index: 2;
         }
       }
 
@@ -158,10 +159,10 @@
         top: unset;
 
         @include media("<phone") {
-          width: 16.475rem;
-          height: 13.712rem;
-          left: calc(19.4rem - 2.7rem);
-          top: calc(49.358rem + 1.7rem)
+          width: 20.538rem;
+          height: 21.02rem;
+          left: calc(3.8rem - 2.7rem);
+          top: calc(49.358rem + 17.9rem)
         }
       }
     }
@@ -210,6 +211,7 @@
 
       @include media("<phone") {
         margin-top: 0.645rem;
+        width: 31.1rem;
       }
 
       span {
@@ -234,7 +236,7 @@
         width: 18.395rem;
         height: 16.129rem;
         left: calc(12.8rem - 2.7rem);
-        top: calc(36.945rem + 7.588rem);
+        top: calc(36.945rem + 14.088rem);
       }
     }
   }
@@ -260,14 +262,16 @@ p.home__body__pre {
 
   @include media("<phone") {
     // width: 30.9rem;
-    width: 30.8rem;
+    font-size: 1.6rem;
+    width: 30.9rem;
     margin-top: 0.9rem;
   }
 }
 
 .home__body__media {
   position: absolute;
-  img{
+
+  img {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
